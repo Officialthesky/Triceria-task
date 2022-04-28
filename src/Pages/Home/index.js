@@ -78,7 +78,11 @@ export default function Homepage() {
             <option value="filters">filters</option>
           </select>
         </div>
-        <Menus addThisOrder={addThisOrder} orderPlaced={orderPlaced} />
+        <Menus
+          editThisOrder={editThisOrder}
+          addThisOrder={addThisOrder}
+          orderPlaced={orderPlaced}
+        />
       </div>
 
       <div className="ordersPreview">

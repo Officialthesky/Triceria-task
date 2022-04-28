@@ -18,7 +18,12 @@ export default function Orderspreview({ orderPlaced, hide, editThisOrder }) {
               />
             )}
             <div className="orderPrice">
-              <p>${order.menuPrice * order.quantity}</p>
+              <p>
+                $
+                {(
+                  Math.round(order.menuPrice * order.quantity * 100) / 100
+                ).toFixed(2)}
+              </p>
             </div>
           </div>
         );
